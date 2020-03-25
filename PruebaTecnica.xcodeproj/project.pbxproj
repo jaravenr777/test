@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		743884326BF6648784624290 /* Pods_PruebaTecnica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558F2EB869A1F73ECAAFA09B /* Pods_PruebaTecnica.framework */; };
+		2CCCDD92C8F4886EE0EC599F /* libPods-PruebaTecnica.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 758E054A83F71A05FC69A6B8 /* libPods-PruebaTecnica.a */; };
 		82C087FC242B580B00F50DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C087FB242B580B00F50DD1 /* AppDelegate.swift */; };
 		82C08800242B580B00F50DD1 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C087FF242B580B00F50DD1 /* HomeVC.swift */; };
 		82C08803242B580B00F50DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C08801242B580B00F50DD1 /* Main.storyboard */; };
@@ -24,7 +24,8 @@
 		82C08830242B993700F50DD1 /* TableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C0882F242B993700F50DD1 /* TableViewVC.swift */; };
 		82C08835242B9BB600F50DD1 /* MoviesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82C08833242B9BB600F50DD1 /* MoviesTableViewCell.xib */; };
 		82C08836242B9BB600F50DD1 /* MoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C08834242B9BB600F50DD1 /* MoviesTableViewCell.swift */; };
-		AA9889AB7CAB5A9B8997C8E2 /* Pods_PruebaTecnicaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634E3839644E73454921BEDE /* Pods_PruebaTecnicaTests.framework */; };
+		82C08838242BD60F00F50DD1 /* MovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C08837242BD60F00F50DD1 /* MovieVC.swift */; };
+		D266BFE1751AB7E5D497A10C /* libPods-PruebaTecnicaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7578D22FA08447C394B14431 /* libPods-PruebaTecnicaTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		558F2EB869A1F73ECAAFA09B /* Pods_PruebaTecnica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PruebaTecnica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		634E3839644E73454921BEDE /* Pods_PruebaTecnicaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PruebaTecnicaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7578D22FA08447C394B14431 /* libPods-PruebaTecnicaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PruebaTecnicaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		758E054A83F71A05FC69A6B8 /* libPods-PruebaTecnica.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PruebaTecnica.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C087F8242B580B00F50DD1 /* PruebaTecnica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaTecnica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C087FB242B580B00F50DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82C087FF242B580B00F50DD1 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		82C0882F242B993700F50DD1 /* TableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewVC.swift; sourceTree = "<group>"; };
 		82C08833242B9BB600F50DD1 /* MoviesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesTableViewCell.xib; sourceTree = "<group>"; };
 		82C08834242B9BB600F50DD1 /* MoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewCell.swift; sourceTree = "<group>"; };
+		82C08837242BD60F00F50DD1 /* MovieVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVC.swift; sourceTree = "<group>"; };
 		8F3A4F62CE3269D02C405220 /* Pods-PruebaTecnicaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaTecnicaTests.release.xcconfig"; path = "Target Support Files/Pods-PruebaTecnicaTests/Pods-PruebaTecnicaTests.release.xcconfig"; sourceTree = "<group>"; };
 		BEF4943F317D13266BBD1FE0 /* Pods-PruebaTecnica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaTecnica.release.xcconfig"; path = "Target Support Files/Pods-PruebaTecnica/Pods-PruebaTecnica.release.xcconfig"; sourceTree = "<group>"; };
 		D57651C1ED4593104B38516F /* Pods-PruebaTecnicaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaTecnicaTests.debug.xcconfig"; path = "Target Support Files/Pods-PruebaTecnicaTests/Pods-PruebaTecnicaTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				743884326BF6648784624290 /* Pods_PruebaTecnica.framework in Frameworks */,
+				2CCCDD92C8F4886EE0EC599F /* libPods-PruebaTecnica.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA9889AB7CAB5A9B8997C8E2 /* Pods_PruebaTecnicaTests.framework in Frameworks */,
+				D266BFE1751AB7E5D497A10C /* libPods-PruebaTecnicaTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +160,7 @@
 				82C0882F242B993700F50DD1 /* TableViewVC.swift */,
 				82C08833242B9BB600F50DD1 /* MoviesTableViewCell.xib */,
 				82C08834242B9BB600F50DD1 /* MoviesTableViewCell.swift */,
+				82C08837242BD60F00F50DD1 /* MovieVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,8 +168,8 @@
 		832F724ABA2F4129533A65C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				558F2EB869A1F73ECAAFA09B /* Pods_PruebaTecnica.framework */,
-				634E3839644E73454921BEDE /* Pods_PruebaTecnicaTests.framework */,
+				758E054A83F71A05FC69A6B8 /* libPods-PruebaTecnica.a */,
+				7578D22FA08447C394B14431 /* libPods-PruebaTecnicaTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -193,7 +196,6 @@
 				82C087F4242B580B00F50DD1 /* Sources */,
 				82C087F5242B580B00F50DD1 /* Frameworks */,
 				82C087F6242B580B00F50DD1 /* Resources */,
-				1FA411AFD23B82FEE3ED4A40 /* [CP] Embed Pods Frameworks */,
 				82C0882A242B6DAA00F50DD1 /* ShellScript */,
 			);
 			buildRules = (
@@ -213,7 +215,6 @@
 				82C0880A242B580D00F50DD1 /* Sources */,
 				82C0880B242B580D00F50DD1 /* Frameworks */,
 				82C0880C242B580D00F50DD1 /* Resources */,
-				3375BC2F97DB69293C3A0132 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -285,40 +286,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1FA411AFD23B82FEE3ED4A40 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PruebaTecnica/Pods-PruebaTecnica-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PruebaTecnica/Pods-PruebaTecnica-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PruebaTecnica/Pods-PruebaTecnica-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3375BC2F97DB69293C3A0132 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PruebaTecnicaTests/Pods-PruebaTecnicaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PruebaTecnicaTests/Pods-PruebaTecnicaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PruebaTecnicaTests/Pods-PruebaTecnicaTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		82C0882A242B6DAA00F50DD1 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,6 +363,7 @@
 				82C08836242B9BB600F50DD1 /* MoviesTableViewCell.swift in Sources */,
 				82C08830242B993700F50DD1 /* TableViewVC.swift in Sources */,
 				82C08827242B63A200F50DD1 /* Constants.swift in Sources */,
+				82C08838242BD60F00F50DD1 /* MovieVC.swift in Sources */,
 				82C0881F242B5F8500F50DD1 /* Movie.swift in Sources */,
 				82C08821242B61D900F50DD1 /* Genres.swift in Sources */,
 			);

@@ -10,13 +10,14 @@ import UIKit
 
 class MoviesTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var movieImage: UIImageView!
+    @IBOutlet var movieImage: UIImageView!
     @IBOutlet weak var movieTitle: UILabel!
 
     public var cellMovie: Movie! {
        didSet {
            self.movieImage.clipsToBounds = true
            self.movieImage.layer.cornerRadius = 3
+        self.movieImage = UIImageView(image: UIImage())
         self.movieTitle.text = cellMovie.title
        }
     }

@@ -10,23 +10,34 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class TableViewVC: UIViewController {
-    private var moviesTableView: UITableView!
+class TableViewVC: UITableViewController {
     public var movies = PublishSubject<[Movie]>()
     private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        moviesTableView=UITableView()
+        setupTableView()
         setupBinding()
     }
 
+    private func setupTableView() {
+        tableView.delegate = nil
+        tableView.dataSource = nil
+        tableView.tableFooterView = UIView()
+        tableView.rx.modelSelected(Movie.self)
+            .map { URL(string: $0.getImage()) }
+           .subscribe(onNext: { [weak self] url in
+              guard let url = url else {
+                return
+              }
+              self?.present(MovieVC(url: url), animated: true)
+        }).disposed(by: disposeBag)
+    }
     private func setupBinding() {
-        moviesTableView.register(UINib(nibName: "MoviesTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
-
-        movies.bind(to: moviesTableView.rx.items(cellIdentifier: "cell", cellType: MoviesTableViewCell.self)) {  (_, movie, cell) in
+        tableView.register(UINib(nibName: "MoviesTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        movies.bind(to: tableView.rx.items(cellIdentifier: "cell",
+                                           cellType: MoviesTableViewCell.self)) { _, movie, cell in
             cell.cellMovie = movie
-            print(movie.title)
-            }.disposed(by: disposeBag)
+        }.disposed(by: disposeBag)
     }
 }

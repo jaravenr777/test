@@ -1,4 +1,4 @@
-framework module Pods_PruebaTecnica {
+module Pods_PruebaTecnica {
   umbrella header "Pods-PruebaTecnica-umbrella.h"
 
   export *

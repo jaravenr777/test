@@ -24,10 +24,6 @@ class HomeVC: UIViewController {
 
     private lazy var moviesViewController: TableViewVC = {
         var viewController = TableViewVC()
-        //self.addChild(viewController)
-        //self.view.addSubview(viewController.view)
-
-        
         addChild(viewController)
         self.view.addSubview(viewController.view)
         viewController.view.frame = self.view.bounds
