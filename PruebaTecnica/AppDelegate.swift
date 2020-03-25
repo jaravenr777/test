@@ -15,7 +15,7 @@ var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions
         launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let vc1 =  ViewController()
+        let vc1 =  HomeVC()
         self.window?.rootViewController = vc1
         self.window?.makeKeyAndVisible()
         return true
