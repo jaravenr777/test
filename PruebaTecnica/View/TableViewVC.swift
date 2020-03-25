@@ -26,12 +26,15 @@ class TableViewVC: UITableViewController {
         tableView.tableFooterView = UIView()
         tableView.rx.modelSelected(Movie.self)
             .map { URL(string: $0.getImage()) }
-           .subscribe(onNext: { [weak self] url in
+            .subscribe(onNext: { [weak self] url in
               guard let url = url else {
                 return
               }
               self?.present(MovieVC(url: url), animated: true)
         }).disposed(by: disposeBag)
+
+        tableView.rx.setDelegate(self)
+        .disposed(by: disposeBag)
     }
     private func setupBinding() {
         tableView.register(UINib(nibName: "MoviesTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
@@ -40,4 +43,16 @@ class TableViewVC: UITableViewController {
             cell.cellMovie = movie
         }.disposed(by: disposeBag)
     }
+}
+
+extension TableViewVC {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
+
+    override func tableView(_ tableView: UITableView,
+                            willDisplayFooterView view: UIView, forSection section: Int) {
+        print("hola")
+    }
+    tab
 }

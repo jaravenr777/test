@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import AlamofireImage
 
 func getPopulars(success: ((Movies) -> Void)?, faliure: (() -> Void)?) {
     AF.request(Constants.urlPopular).responseJSON { response in
@@ -54,3 +55,15 @@ func getGenero(movie: Movie, completion: @escaping (String) -> Void) {
     }
 
 }
+func getImage(url:String, completion:@escaping (UIImage?) -> Void ) {
+    AF.request(url).responseData { response in
+        switch response.result {
+        case .success(let value):
+            completion(UIImage(data: value))
+        case .failure(let error):
+            print(error)
+            completion(nil)
+        }
+    }
+}
+

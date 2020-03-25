@@ -10,21 +10,28 @@ import UIKit
 
 class MoviesTableViewCell: UITableViewCell {
 
-    @IBOutlet var movieImage: UIImageView!
+    @IBOutlet weak var movieImage: UIImageView!
     @IBOutlet weak var movieTitle: UILabel!
 
     public var cellMovie: Movie! {
        didSet {
-           self.movieImage.clipsToBounds = true
-           self.movieImage.layer.cornerRadius = 3
-        self.movieImage = UIImageView(image: UIImage())
-        self.movieTitle.text = cellMovie.title
+            getImage(url: cellMovie.getImage(), completion: { image  in
+                if let img = image {
+                    if self.movieImage != nil {
+                        self.movieImage.image = img
+                    }
+                }
+            })
+            self.movieImage.clipsToBounds = true
+            self.movieImage.layer.cornerRadius = 3
+            self.movieTitle.text = cellMovie.title
        }
     }
 
     override func awakeFromNib() {
-       super.awakeFromNib()
-       self.backgroundColor = .clear
+        super.awakeFromNib()
+        self.backgroundColor = .clear
+        movieImage.image = UIImage()
     }
     override func prepareForReuse() {
        movieImage.image = UIImage()
