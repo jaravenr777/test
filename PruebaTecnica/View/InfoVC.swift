@@ -30,6 +30,7 @@ class InfoVC: UIViewController {
         self.view.backgroundColor = .white
         initializeImage(movie: movie)
         initializeText(movie: movie)
+        initializeButton()
     }
 
     private func initializeImage(movie: Movie) {
@@ -54,5 +55,23 @@ class InfoVC: UIViewController {
         view.addSubview(label1)
         label2 = UILabel(frame: CGRect(x: 60, y: 600, width: 300, height: 200))
         view.addSubview(label2)
+    }
+
+    private func initializeButton() {
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 170, height: 60))
+        button.setTitle( "Cerrar", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.addTarget(self, action: #selector(volver), for: .touchUpInside)
+        view.addSubview(button)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        button.topAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive = true
+        button.widthAnchor.constraint(equalToConstant: 170).isActive = true
+        button.heightAnchor.constraint(equalToConstant: 60).isActive = true
+    }
+
+    @objc func volver() {
+        print("volver")
+        self.dismiss(animated: true)
     }
 }
