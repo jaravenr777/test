@@ -10,7 +10,6 @@
 		2CCCDD92C8F4886EE0EC599F /* libPods-PruebaTecnica.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 758E054A83F71A05FC69A6B8 /* libPods-PruebaTecnica.a */; };
 		82C087FC242B580B00F50DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C087FB242B580B00F50DD1 /* AppDelegate.swift */; };
 		82C08800242B580B00F50DD1 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C087FF242B580B00F50DD1 /* HomeVC.swift */; };
-		82C08803242B580B00F50DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C08801242B580B00F50DD1 /* Main.storyboard */; };
 		82C08805242B580C00F50DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C08804242B580C00F50DD1 /* Assets.xcassets */; };
 		82C08808242B580C00F50DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C08806242B580C00F50DD1 /* LaunchScreen.storyboard */; };
 		82C08813242B580D00F50DD1 /* PruebaTecnicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C08812242B580D00F50DD1 /* PruebaTecnicaTests.swift */; };
@@ -24,7 +23,8 @@
 		82C08830242B993700F50DD1 /* TableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C0882F242B993700F50DD1 /* TableViewVC.swift */; };
 		82C08835242B9BB600F50DD1 /* MoviesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82C08833242B9BB600F50DD1 /* MoviesTableViewCell.xib */; };
 		82C08836242B9BB600F50DD1 /* MoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C08834242B9BB600F50DD1 /* MoviesTableViewCell.swift */; };
-		82C08838242BD60F00F50DD1 /* MovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C08837242BD60F00F50DD1 /* MovieVC.swift */; };
+		82C08838242BD60F00F50DD1 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C08837242BD60F00F50DD1 /* InfoVC.swift */; };
+		82C0883A242C2F2000F50DD1 /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C08839242C2F2000F50DD1 /* InfoViewModel.swift */; };
 		D266BFE1751AB7E5D497A10C /* libPods-PruebaTecnicaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7578D22FA08447C394B14431 /* libPods-PruebaTecnicaTests.a */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +44,6 @@
 		82C087F8242B580B00F50DD1 /* PruebaTecnica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaTecnica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C087FB242B580B00F50DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82C087FF242B580B00F50DD1 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		82C08802242B580B00F50DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82C08804242B580C00F50DD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82C08807242B580C00F50DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82C08809242B580C00F50DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,7 +60,8 @@
 		82C0882F242B993700F50DD1 /* TableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewVC.swift; sourceTree = "<group>"; };
 		82C08833242B9BB600F50DD1 /* MoviesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesTableViewCell.xib; sourceTree = "<group>"; };
 		82C08834242B9BB600F50DD1 /* MoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewCell.swift; sourceTree = "<group>"; };
-		82C08837242BD60F00F50DD1 /* MovieVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVC.swift; sourceTree = "<group>"; };
+		82C08837242BD60F00F50DD1 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		82C08839242C2F2000F50DD1 /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
 		8F3A4F62CE3269D02C405220 /* Pods-PruebaTecnicaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaTecnicaTests.release.xcconfig"; path = "Target Support Files/Pods-PruebaTecnicaTests/Pods-PruebaTecnicaTests.release.xcconfig"; sourceTree = "<group>"; };
 		BEF4943F317D13266BBD1FE0 /* Pods-PruebaTecnica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaTecnica.release.xcconfig"; path = "Target Support Files/Pods-PruebaTecnica/Pods-PruebaTecnica.release.xcconfig"; sourceTree = "<group>"; };
 		D57651C1ED4593104B38516F /* Pods-PruebaTecnicaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaTecnicaTests.debug.xcconfig"; path = "Target Support Files/Pods-PruebaTecnicaTests/Pods-PruebaTecnicaTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,7 +116,6 @@
 				82C0882B242B91E000F50DD1 /* ViewModel */,
 				82C087FB242B580B00F50DD1 /* AppDelegate.swift */,
 				82C0882E242B96C300F50DD1 /* View */,
-				82C08801242B580B00F50DD1 /* Main.storyboard */,
 				82C08804242B580C00F50DD1 /* Assets.xcassets */,
 				82C08806242B580C00F50DD1 /* LaunchScreen.storyboard */,
 				82C08809242B580C00F50DD1 /* Info.plist */,
@@ -149,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				82C0882C242B929900F50DD1 /* HomeViewModel.swift */,
+				82C08839242C2F2000F50DD1 /* InfoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -160,7 +160,7 @@
 				82C0882F242B993700F50DD1 /* TableViewVC.swift */,
 				82C08833242B9BB600F50DD1 /* MoviesTableViewCell.xib */,
 				82C08834242B9BB600F50DD1 /* MoviesTableViewCell.swift */,
-				82C08837242BD60F00F50DD1 /* MovieVC.swift */,
+				82C08837242BD60F00F50DD1 /* InfoVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -272,7 +272,6 @@
 				82C08808242B580C00F50DD1 /* LaunchScreen.storyboard in Resources */,
 				82C08805242B580C00F50DD1 /* Assets.xcassets in Resources */,
 				82C08835242B9BB600F50DD1 /* MoviesTableViewCell.xib in Resources */,
-				82C08803242B580B00F50DD1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82C0883A242C2F2000F50DD1 /* InfoViewModel.swift in Sources */,
 				82C08823242B61ED00F50DD1 /* Movies.swift in Sources */,
 				82C0882D242B929900F50DD1 /* HomeViewModel.swift in Sources */,
 				82C08800242B580B00F50DD1 /* HomeVC.swift in Sources */,
@@ -363,7 +363,7 @@
 				82C08836242B9BB600F50DD1 /* MoviesTableViewCell.swift in Sources */,
 				82C08830242B993700F50DD1 /* TableViewVC.swift in Sources */,
 				82C08827242B63A200F50DD1 /* Constants.swift in Sources */,
-				82C08838242BD60F00F50DD1 /* MovieVC.swift in Sources */,
+				82C08838242BD60F00F50DD1 /* InfoVC.swift in Sources */,
 				82C0881F242B5F8500F50DD1 /* Movie.swift in Sources */,
 				82C08821242B61D900F50DD1 /* Genres.swift in Sources */,
 			);
@@ -388,14 +388,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		82C08801242B580B00F50DD1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				82C08802242B580B00F50DD1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		82C08806242B580C00F50DD1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -25,12 +25,12 @@ class TableViewVC: UITableViewController {
         tableView.dataSource = nil
         tableView.tableFooterView = UIView()
         tableView.rx.modelSelected(Movie.self)
-            .map { URL(string: $0.getImage()) }
-            .subscribe(onNext: { [weak self] url in
-              guard let url = url else {
-                return
-              }
-              self?.present(MovieVC(url: url), animated: true)
+            .subscribe(onNext: { [weak self] movie in
+                let viewController = InfoVC()
+                viewController.completionHandler = {
+                    return movie
+                }
+              self?.present(viewController, animated: true)
         }).disposed(by: disposeBag)
 
         tableView.rx.setDelegate(self)
@@ -54,5 +54,4 @@ extension TableViewVC {
                             willDisplayFooterView view: UIView, forSection section: Int) {
         print("hola")
     }
-    tab
 }
