@@ -10,7 +10,6 @@
 		2CCCDD92C8F4886EE0EC599F /* libPods-PruebaTecnica.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 758E054A83F71A05FC69A6B8 /* libPods-PruebaTecnica.a */; };
 		82C087FC242B580B00F50DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C087FB242B580B00F50DD1 /* AppDelegate.swift */; };
 		82C08800242B580B00F50DD1 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C087FF242B580B00F50DD1 /* HomeVC.swift */; };
-		82C08805242B580C00F50DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C08804242B580C00F50DD1 /* Assets.xcassets */; };
 		82C08808242B580C00F50DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C08806242B580C00F50DD1 /* LaunchScreen.storyboard */; };
 		82C08813242B580D00F50DD1 /* PruebaTecnicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C08812242B580D00F50DD1 /* PruebaTecnicaTests.swift */; };
 		82C0881F242B5F8500F50DD1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C0881E242B5F8500F50DD1 /* Movie.swift */; };
@@ -44,7 +43,6 @@
 		82C087F8242B580B00F50DD1 /* PruebaTecnica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaTecnica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C087FB242B580B00F50DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82C087FF242B580B00F50DD1 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		82C08804242B580C00F50DD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82C08807242B580C00F50DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82C08809242B580C00F50DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82C0880E242B580D00F50DD1 /* PruebaTecnicaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PruebaTecnicaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,15 +109,13 @@
 		82C087FA242B580B00F50DD1 /* PruebaTecnica */ = {
 			isa = PBXGroup;
 			children = (
-				82C08826242B63A200F50DD1 /* Constants.swift */,
 				82C0881D242B5F3E00F50DD1 /* Model */,
 				82C0882B242B91E000F50DD1 /* ViewModel */,
-				82C087FB242B580B00F50DD1 /* AppDelegate.swift */,
 				82C0882E242B96C300F50DD1 /* View */,
-				82C08804242B580C00F50DD1 /* Assets.xcassets */,
+				82C087FB242B580B00F50DD1 /* AppDelegate.swift */,
 				82C08806242B580C00F50DD1 /* LaunchScreen.storyboard */,
 				82C08809242B580C00F50DD1 /* Info.plist */,
-				82C08828242B646000F50DD1 /* Network.swift */,
+				82C0883B242CD05300F50DD1 /* SupportFiles */,
 			);
 			path = PruebaTecnica;
 			sourceTree = "<group>";
@@ -156,13 +152,30 @@
 		82C0882E242B96C300F50DD1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				82C0883C242CD08000F50DD1 /* cell */,
 				82C087FF242B580B00F50DD1 /* HomeVC.swift */,
 				82C0882F242B993700F50DD1 /* TableViewVC.swift */,
-				82C08833242B9BB600F50DD1 /* MoviesTableViewCell.xib */,
-				82C08834242B9BB600F50DD1 /* MoviesTableViewCell.swift */,
 				82C08837242BD60F00F50DD1 /* InfoVC.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		82C0883B242CD05300F50DD1 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				82C08826242B63A200F50DD1 /* Constants.swift */,
+				82C08828242B646000F50DD1 /* Network.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		82C0883C242CD08000F50DD1 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				82C08833242B9BB600F50DD1 /* MoviesTableViewCell.xib */,
+				82C08834242B9BB600F50DD1 /* MoviesTableViewCell.swift */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		832F724ABA2F4129533A65C3 /* Frameworks */ = {
@@ -270,7 +283,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				82C08808242B580C00F50DD1 /* LaunchScreen.storyboard in Resources */,
-				82C08805242B580C00F50DD1 /* Assets.xcassets in Resources */,
 				82C08835242B9BB600F50DD1 /* MoviesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,7 +529,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5A32C87CA162358274BBCA0 /* Pods-PruebaTecnica.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 52A6WNJW73;
 				INFOPLIST_FILE = PruebaTecnica/Info.plist;
@@ -537,7 +548,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BEF4943F317D13266BBD1FE0 /* Pods-PruebaTecnica.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 52A6WNJW73;
 				INFOPLIST_FILE = PruebaTecnica/Info.plist;
